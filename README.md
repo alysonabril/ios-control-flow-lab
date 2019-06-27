@@ -28,10 +28,10 @@ if conditionTwo {
 print("D")
 ```
 
-- A
+- A****
 - B
-- C
-- D
+- C****
+- D****
 
 ***
 ## Question 2
@@ -40,6 +40,7 @@ What will the code block below print?  Select all that apply:
 
 ```swift
 let appInfo = (name: "myCoolApp", version: 0.4)
+
 switch appInfo {
  case (_, 0.0..<1.0):
  print("\(appInfo.0) hasn't released yet")
@@ -50,8 +51,8 @@ switch appInfo {
 }
 ```
 
-- appInfo.0 hasn't released yet
-- myCoolApp hasn't released yet
+- appInfo.0 hasn't released yet 
+- myCoolApp hasn't released yet ****
 - Thanks for looking at myCoolApp!
 - I'm not quite sure what you are looking at
 - It will give a compile-time error
@@ -75,7 +76,7 @@ default:
 }
 ```
 
-- A
+- A***
 - B
 - C
 - D
@@ -100,7 +101,7 @@ case "snickers":
 
 - No parentheses around the conditions
 - No opening and closing brackets in each of the cases
-- No default case in the switch statement
+- No default case in the switch statement *****
 - No print statement right outside the switch statement
 
 ***
@@ -112,6 +113,21 @@ Given the current weather conditions (rain, sunny, snow), use a switch statement
 let currentWeather = "rain"
 
 // enter code below
+
+switch currentWeather {
+
+case "rain": 
+print("bring an umbrella")
+
+case "snow": 
+print("stay home")
+
+case "sunny":
+print("wear them shades")
+
+default:
+print("it's comfy outside")
+}
 ```
 
 ***
@@ -124,6 +140,9 @@ let firstName = "John"
 let lastName = "Appleseed"
 
 // enter code below
+ let fullName = "\(firstName) \(lastName)"
+ print(fullName)
+
 ```
 
 ***
